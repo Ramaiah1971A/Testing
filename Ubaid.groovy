@@ -12,32 +12,27 @@ pipeline {
         stage('Fun') {
             steps {
                 script {
-                        echo '$HName is a good boy'
-                        echo '$KName is a bad boy'
-                        echo '$RName is a tall boy'
-                    }
+                    echo '$HName is a good boy'
+                    echo '$KName is a bad boy'
+                    echo '$RName is a tall boy'
                 }
             }
         }
-        stages {
         stage('Fun2') {
             steps {
                 script {
-                        echo '$HName is a good boy'
-                        echo '$KName is a bad boy'
-                        echo '$RName is a tall boy'
-                    }
+                    echo '$HName is a good boy'
+                    echo '$KName is a bad boy'
+                    echo '$RName is a tall boy'
                 }
             }
         }
-        stages {
         stage('Fun3') {
             steps {
                 script {
-                        echo '$HName is a good boy'
-                        echo '$KName is a bad boy'
-                        echo '$RName is a tall boy'
-                    }
+                    echo '$HName is a good boy'
+                    echo '$KName is a bad boy'
+                    echo '$RName is a tall boy'
                 }
             }
         }
