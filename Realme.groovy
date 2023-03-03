@@ -5,7 +5,7 @@ pipeline {
         Env_Type = 'NP'
     }
     Parameter {
-        choice (name: 'DC' choices: ['HAresh', 'QA', 'Sprint'], description: 'Select QA Environment for deployment')
+        choice(name: 'DC', choices: ['HAresh', 'QA', 'Sprint'], description: 'Select QA Environment for deployment')
     }
     stages {
             stage('Build') {
