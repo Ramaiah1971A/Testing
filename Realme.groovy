@@ -5,22 +5,58 @@ pipeline {
         Env_Type = 'NP'
     }
     parameters {
-        choice(name: 'DC', choices: ['HAresh', 'QA', 'Sprint'], description: 'Select QA Environment for deployment')
+        choice(name: 'NAME', choices: ['Hareesh', 'Kiran', 'Ramaiah'], description: 'Select the Name for Fun purpose')
     }
     stages {
-        stage('Build') {
+        stage('Fun') {
             steps {
-                echo ' his name is hareesh'
+                script {
+                    switch (params.NAME) {
+                        case 'Hareesh':
+                            echo 'Hareesh is a good boy'
+                            break
+                        case 'Kiran':
+                            echo 'Kiran is a bad boy'
+                            break
+                        case 'Ramaiah':
+                            echo 'Ramaiah is a tall boy'
+                            break
+                    }
+                }
             }
         }
-        stage('Test'){
+        stage('Frustration') {
             steps {
-                echo 'his name is kiran'
+                script {
+                    switch (params.NAME) {
+                        case 'Hareesh':
+                            echo 'Hareesh is a good boy'
+                            break
+                        case 'Kiran':
+                            echo 'Kiran is a bad boy'
+                            break
+                        case 'Ramaiah':
+                            echo 'Ramaiah is a tall boy'
+                            break
+                    }
+                }
             }
         }
-        stage('Deploy') {
+        stage('Future') {
             steps {
-                echo 'his name is harsha'
+                script {
+                    switch (params.NAME) {
+                        case 'Hareesh':
+                            echo 'Hareesh is a good boy'
+                            break
+                        case 'Kiran':
+                            echo 'Kiran is a bad boy'
+                            break
+                        case 'Ramaiah':
+                            echo 'Ramaiah is a tall boy'
+                            break
+                    }
+                }
             }
         }
     }
