@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'Windows_123_slave' }
+    agent any
     environment {
         HName = 'Hareesh'
         KName = 'Kiran'
